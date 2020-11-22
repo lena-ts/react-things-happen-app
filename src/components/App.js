@@ -5,6 +5,7 @@ import ThingView from "./screens/ThingView";
 import {connect} from "react-redux";
 import {showCurrentThing, setTabView} from "../actions";
 import AddThingView from "./screens/AddThingView";
+import EditThingView from "./screens/EditThingView";
 import TabsOptions from "./constants/TabsOptions";
 import NavigationTab from "./ui/navigation/NavigationTab";
 import SettingsView from "./screens/SettingsView";
@@ -26,7 +27,7 @@ export class App extends React.Component {
     }
 
     render() {
-        const { currentThing, tabView, addThingView } = this.props
+        const { currentThing, tabView, addThingView, editThingView } = this.props
         const thingView = currentThing ? <ThingView
             isVisible={currentThing ? currentThing : null}
             closeScreen={this.handleClose}
@@ -52,10 +53,13 @@ export class App extends React.Component {
         )
 
         const overflowHidden =  currentThing || addThingView ? 'is-hidden' : ''
+        const navigationTabs = addThingView || editThingView ?
+             null
+            :  <NavigationTab options={TabsOptions} defaultValue="things" dispatchAction={this.dispatchView}/>
         return (
             <div className={`app ${overflowHidden}`}>
                 {activeTabView}
-                <NavigationTab options={TabsOptions} defaultValue="things" dispatchAction={this.dispatchView}/>
+                {navigationTabs}
             </div>
         );
     }
@@ -65,6 +69,7 @@ const mapStateToProps = state => {
     return {
         currentThing: state.currentThing,
         addThingView: state.addThingView,
+        editThingView: state.editThingView,
         tabView: state.tabView,
     };
 };

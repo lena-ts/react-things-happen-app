@@ -11,7 +11,7 @@ const SampleData = [
         date: '2 days ago',
         selectedDays: [new Date(2020, month, day - 5 ),
             new Date(2020, month, day - 2)],
-        image_path: 'assets/images/8.png'
+        image_path: 'assets/images/catalog-min/8-min.png'
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const SampleData = [
         date: '1 day ago',
         selectedDays: [new Date(2020, month, day - 3),
             new Date(2020, month, day - 1)],
-        image_path: 'assets/images/yoga.png'
+        image_path: 'assets/images/catalog-min/13-min.png'
     },
     {
         id: 3,
@@ -27,7 +27,7 @@ const SampleData = [
         date: '9 days ago',
         selectedDays: [
             new Date(2020, month, day - 9)],
-        image_path: 'assets/images/32.png'
+        image_path: 'assets/images/catalog-min/32-min.png'
     },
     {
         id: 4,
@@ -35,7 +35,7 @@ const SampleData = [
         date: 'Today',
         selectedDays: [
             new Date(2020, month, day)],
-        image_path: 'assets/images/contact_lens.png'
+        image_path: 'assets/images/catalog-min/1-min.png'
 },
     {
         id: 5,
@@ -43,7 +43,7 @@ const SampleData = [
         date: '6 days ago',
         selectedDays: [new Date(2020, month, day - 7),
             new Date(2020, month, day - 6)],
-        image_path: 'assets/images/water_plants.png'
+        image_path: 'assets/images/catalog-min/5-min.png'
     },
     // {
     //     id: 6,

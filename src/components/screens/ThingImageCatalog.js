@@ -6,7 +6,7 @@ import PropTypes from 'prop-types';
 const importAll = (r) => {
     return r.keys().map(r);
 }
-const images = importAll(require.context('../../assets/images/catalog/', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('../../assets/images/catalog-min/', false, /\.(png|jpe?g|svg)$/));
 
 const ThingImageCatalog = ({isVisible, title, cancelText, doneText, cancelClick, doneClick, getImage}) => {
 
