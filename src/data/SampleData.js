@@ -11,7 +11,7 @@ const SampleData = [
         date: '2 days ago',
         selectedDays: [new Date(2020, month, day - 5 ),
             new Date(2020, month, day - 2)],
-        image_path: '../assets/images/8.png'
+        image_path: 'assets/images/8.png'
     },
     {
         id: 2,
@@ -19,7 +19,7 @@ const SampleData = [
         date: '1 day ago',
         selectedDays: [new Date(2020, month, day - 3),
             new Date(2020, month, day - 1)],
-        image_path: '../assets/images/yoga.png'
+        image_path: 'assets/images/yoga.png'
     },
     {
         id: 3,
