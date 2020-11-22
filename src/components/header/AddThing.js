@@ -5,9 +5,9 @@ const AddThingButton = (handleClick) => {
         handleClick.handleClick()
     }
     return(
-        <button className="addthing-button" onClick={handleButtonClick}>
+        <div className="addthing-button" onClick={handleButtonClick}>
 
-        </button>
+        </div>
     )
 }
 
