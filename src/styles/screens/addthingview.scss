@@ -8,6 +8,8 @@ $add-thing-title__height: 250px;
   background: white;
   transition: 0.3s;
   overflow: hidden;
+  display: grid;
+  grid-template-rows: 45px auto 155px;
 
   &.visible {
     left: 0;
@@ -51,7 +53,8 @@ $add-thing-title__height: 250px;
 .add-thing-image {
   position: relative;
   //height: calc(100% - #{$add-thing-title__height});
-  height: calc(100% - #{$add-thing-title__height});
+  //height: calc(100% - #{$add-thing-title__height});
+  height: 100%;
   overflow: hidden;
 
   &-button {

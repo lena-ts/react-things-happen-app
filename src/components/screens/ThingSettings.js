@@ -82,11 +82,13 @@ const ThingSettings = ({classname, hasDeleteButton, header, thingImageSettings, 
                 defaultImage={thingImageSettings.imagePath}
                 showPopup={showPopup}
             />
+            <div className="edit-thing-footer">
             <AddThingTitle
                 getThingTitle={thingTitleSettings.thingTitle}
                 defaultValue={thingTitleSettings.defaultTitle}
             />
             {deleteButton}
+            </div>
         </section>
             {popup}
             {catalog}

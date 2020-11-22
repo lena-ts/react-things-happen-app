@@ -9,6 +9,10 @@
 //  text-transform: uppercase;
 //}
 
+.DayPicker-Month {
+  margin: 1rem 0 !important;
+}
+
 //Day
 .DayPicker-Day {
   outline: none;
@@ -34,4 +38,9 @@
 
 .DayPicker-NavButton {
   outline: none;
+}
+
+.calendar {
+  height: calc(100% - 270px);
+  overflow-y: scroll;
 }

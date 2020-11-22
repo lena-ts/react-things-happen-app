@@ -6,6 +6,8 @@
   height: 100%;
   background: white;
   transition: 0.2s;
+  display: grid;
+  grid-template-rows: 45px auto 225px;
 
   &.visible {
     left: 0;
@@ -19,7 +21,8 @@
   }
 
   .add-thing-image {
-    height: calc(100% - 320px);
+    //height: calc(100% - 320px);
+    height: 100%;
   }
 
   .add-thing-title {
@@ -30,3 +33,9 @@
     margin: $indent-base;
   }
 }
+
+//.edit-thing-footer {
+//  position: fixed;
+//  width: 100%;
+//  bottom: 55px;
+//}
